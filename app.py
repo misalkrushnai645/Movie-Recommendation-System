@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import pickle
 
-st.title("Movie Recommender System")
+st.title("Movie Recommendation System")
 df = pd.read_csv('cleaned_data.csv')
 with open("similarity.pkl", "rb") as file:
     similarities = pickle.load(file)
